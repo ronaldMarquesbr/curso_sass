@@ -1,0 +1,52 @@
+$cor: red
+.item
+
+    background-color: green
+
+    p
+        font-size: 18px
+
+    h1
+        margin: 20px 0
+
+// propriedades aninhadas
+
+nav 
+    font:
+        family: "Arial"
+        style: italic
+        size: 30px
+        weight: bold
+
+// pseudo elementos 
+
+a
+    color: white
+
+    &:hover
+        color: red
+        background-color: blue
+
+
+// variaveis
+    // VARIAVEIS NUMERICAS 
+$teste: 300
+
+div
+    width: $teste
+
+// VARIAVEIS LISTAS
+
+$animals-1: puma, sea-slug, egret, salamander
+$animals-2: puma sea-slug egret salamander
+$animals-3: "puma", "sea-slug", "egret", "salamander"
+// no caso de strings, pode ser com  aspas ou sem aspas
+$margens: 10px, 20px, 10px,20px
+
+.container
+    margin: $margens
+
+
+
+// VARIAVEIS - MAPS 
+$gray:( azul: blue )
