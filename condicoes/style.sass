@@ -1,0 +1,18 @@
+$template: light
+
+header
+    @if $template == dark
+        color: gray
+        background-color: black
+    
+    @else if $template == light
+        color: white
+        background-color: gray 
+
+    @else if $template == sea
+        color: cyan
+        background-color: blue
+
+    @else 
+        color: brown 
+        background-color: brown
