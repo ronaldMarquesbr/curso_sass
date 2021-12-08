@@ -1,5 +1,5 @@
 // extend
-
+// Podemos herdar estilos de outras classes
 .msg
     border: solid 1px black
     padding: 4px
@@ -9,3 +9,14 @@
     @extend .msg 
     border-color: red
     color: white
+
+// Também pode usar em pseudo elementos
+
+a:hover
+    text-decoration: underline
+
+.onHover
+    @extend a:hover 
+    color: cyan
+
+// podemos usar o extend mais de uma vez

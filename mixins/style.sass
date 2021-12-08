@@ -1,0 +1,36 @@
+// permitem definir estilos que podem ser reutilizados em toda a folha de estilo
+
+@mixin border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius 
+    -ms-border-radius: $radius
+    border-radius: $radius
+
+.box
+    @include border-radius(10px)
+
+
+
+@mixin titulo($size, $color: blue)
+    color: $color
+    font-size: $size
+// o valor 'blue' está como default
+
+h1
+    @include titulo(14px)
+
+// Também pode explicitar os parâmetros
+
+h1 
+    @include titulo($color: cyan, $size: 20px)
+
+// mixins com quantidade de parâmetros indefinida 
+
+@mixin pad ($values...)
+    padding: $values
+
+p
+    @include pad(20px)
+
+.quadrado
+    @include pad(10px 5px 10px 5px)

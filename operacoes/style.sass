@@ -1,0 +1,46 @@
+// number operations
+
+h1
+    font-size: 5px + 2
+// o segundo valor não pode ter unidade 
+// tomar cuidado com as unidades, elas podem ser incompativeis
+
+// obs: tomar cuidado com a subtração porque o '-' tem varios significados
+// no css e no sass
+// ex: indicar um numero negativo; um operador de negação unária (como em -$var)
+// ...; parte de um identificador(font-size)
+
+// dica: colocar uma negação unária entre parênteses caso ela esteja em uma lista separada por espaço, como em: 10px (-$var)
+
+
+// Divisão
+
+$x: 10px
+$y: 2px 
+
+div
+    $width: 200px
+    width: $width/2 // irá ocorrer uma divisão, porque o valor está dentro de uma variável
+    font-size: (20px / 2) // irá ocorrer uma divisão, porque a operação está entre parênteses
+    font: #{$x} / #{$y} // não haverá divisão, por causa da interpolação,
+
+
+// Operações com cores
+
+// O sass faz as operações por partes
+
+// hexadecimais, rgb e rgba
+// obs: em operações com rgba, o alfa deverá ser o mesmo 
+
+
+
+// Operações com strings
+
+// Ocorre a concatenação
+
+$n_moedas: 5
+
+h2
+    content: "Eu tenho #{$n_moedas + 5} moedas"
+
+// se o valor da variável for igual a 'null', o resultado será um espaço 

@@ -7,4 +7,10 @@
   border-color: red;
   color: white; }
 
+a:hover, .onHover {
+  text-decoration: underline; }
+
+.onHover {
+  color: cyan; }
+
 /*# sourceMappingURL=style.css.map */

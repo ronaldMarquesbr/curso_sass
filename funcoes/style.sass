@@ -1,0 +1,26 @@
+// lighten(cor, porcentagem) -> clarear 
+// darken(cor, porcentagem) -> escurecer 
+
+// quote(string) -> coloca aspas em uma string  
+// unquote(string) -> retira as aspas de uma string
+
+// to-upper-case(string)
+// to-lower-case(string)
+
+// str-length(string)
+
+// percentagem()
+
+// round() -> arredonda para número real
+// ceil() -> arredonda pra cima
+// floor() -> arredonda para baixo 
+
+
+// criando a propria função
+
+@function calc-fluid ($target, $container)
+    @return ($target/$container) * 100%
+
+
+div
+    width: calc-fluid(650px, 1000px)
