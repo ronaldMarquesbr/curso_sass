@@ -1,0 +1,31 @@
+.item-1 {
+  width: 2em; }
+
+.item-2 {
+  width: 4em; }
+
+.item-3 {
+  width: 6em; }
+
+.puma-icon {
+  background-image: url("/images/puma.png"); }
+
+.sea-slug-icon {
+  background-image: url("/images/sea-slug.png"); }
+
+.egret-icon {
+  background-image: url("/images/egret.png"); }
+
+.salamander-icon {
+  background-image: url("/images/salamander.png"); }
+
+.box-1 {
+  width: 100px; }
+
+.box-2 {
+  width: 200px; }
+
+.box-3 {
+  width: 300px; }
+
+/*# sourceMappingURL=style.css.map */

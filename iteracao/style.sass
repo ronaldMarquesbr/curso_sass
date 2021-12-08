@@ -1,0 +1,22 @@
+@for $i from 1 through 3
+    .item-#{$i}
+        width: 2em * $i
+
+// pode ser usado o 'to' no lugar de 'through', porém, a ultima iteração será desconsiderada
+
+
+
+
+@each $animal in puma, sea-slug, egret, salamander
+    .#{$animal}-icon
+        background-image: url('/images/#{$animal}.png')
+    
+// poderia colocar a lista dentro de uma variável
+
+
+$c: 1
+
+@while $c <= 3
+    .box-#{$c}
+        width: 100px * $c
+    $c: $c + 1
